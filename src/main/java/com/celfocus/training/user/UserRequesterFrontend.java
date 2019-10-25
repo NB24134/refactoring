@@ -125,7 +125,7 @@ public class UserRequesterFrontend {
 
         nameItem = nameItem.toLowerCase().concat("_item");
 
-        saver.aIU(user, nameItem, qt);
+        saver.applyItemDiscount(user, nameItem, qt);
     }
 
 }

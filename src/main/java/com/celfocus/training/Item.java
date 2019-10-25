@@ -1,12 +1,12 @@
 package com.celfocus.training;
 
-public class ItemInfo {
+public class Item {
 
     public String name;
 
     public double value;
 
-    public ItemInfo(String name, double value) {
+    public Item(String name, double value) {
         this.name = name;
         this.value = value;
     }

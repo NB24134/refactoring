@@ -35,4 +35,12 @@ public class ShoppingCart {
         this.items = items;
     }
 
+    public void removeShoppingCartItem(ShoppingCartItem sci){
+        for (ShoppingCartItem cartItem : this.getItems()) {
+            if (cartItem.getItem() == sci.getItem()) {
+                this.getItems().remove(sci);
+            }
+        }
+    }
+
 }

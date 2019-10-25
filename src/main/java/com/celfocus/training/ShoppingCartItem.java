@@ -2,20 +2,20 @@ package com.celfocus.training;
 
 public class ShoppingCartItem {
 
-    public ItemInfo itemInfo;
+    public Item item;
 
     public int quantity;
 
     public double discount;
 
-    public ShoppingCartItem(ItemInfo itemInfo, int quantity, double discount) {
-        this.itemInfo = itemInfo;
+    public ShoppingCartItem(Item item, int quantity, double discount) {
+        this.item = item;
         this.quantity = quantity;
         this.discount = discount;
     }
 
-    public ItemInfo getItemInfo() {
-        return itemInfo;
+    public Item getItem() {
+        return item;
     }
 
     public int getQuantity() {
@@ -26,8 +26,8 @@ public class ShoppingCartItem {
         return discount;
     }
 
-    public void setItemInfo(ItemInfo itemInfo) {
-        this.itemInfo = itemInfo;
+    public void setItem(Item item) {
+        this.item = item;
     }
 
     public void setQuantity(int quantity) {
@@ -39,7 +39,7 @@ public class ShoppingCartItem {
     }
 
     public void addQuantity(int quantity){
-
+        this.quantity += quantity;
     }
 
 }
